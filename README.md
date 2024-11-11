@@ -36,15 +36,15 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor kick-off werkgroep</summary>
 
   ### Je opdracht:
-  https://open.spotify.com/
+  https://www.dior.com/nl_nl?wiz_campaign=OD_OTH_NLD_AO_OTH_DIOR_OGOING_AW_TXT_GGL_CRD_DUT_EUR_EXTM_BRA&wiz_source=bing&wiz_medium=search_cpc&wiz_term=OneDior-Exact&wiz_content=dior&msclkid=e1ef4cfde629145c485a2bcf83f7abcd&utm_source=bing&utm_medium=cpc&utm_campaign=OD_OTH_NLD_AO_OTH_DIOR_OGOING_AW_TXT_GGL_CRD_DUT_EUR_EXTM_BRA&utm_term=dior&utm_content=OneDior-Exact
 
   #### Screenshot(s) van de eerste pagina (small screen): 
-  hier de naam van de pagina  
-  <img src="readme-images/home_spotify.png" width="375px" alt="De home pagina van Spotify">
+  Home pagina Dior 
+  <img src="readme-images/home_dior.png" width="375px" alt="De home pagina van Dior">
 
   #### Screenshot(s) van de tweede pagina (small screen):
-  hier de naam van de pagina  
-  <img src="readme-images/playlist_spotify.png" width="375px" alt="De playlist pagina van Spotify">
+  Cadeaus voor de feestdagen pagina Dior  
+  <img src="readme-images/cadeaus_dior.png" width="375px" alt="De cadeaus voor de feestdagen pagina van Dior  ">
  
 </details>
 
