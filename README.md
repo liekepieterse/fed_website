@@ -40,12 +40,12 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   #### Screenshot(s) van de eerste pagina (small screen): 
   Home pagina Dior 
-  <img src="readme-images/home_dior.png" width="375px" alt="De home pagina van Dior">
+  <img src="readme-images/home_dior.jpg" width="375px" alt="De home pagina van Dior">
 
   #### Screenshot(s) van de tweede pagina (small screen):
   Cadeaus voor de feestdagen pagina Dior  
-  <img src="readme-images/cadeaus_dior1.png" width="375px" alt="De cadeaus voor de feestdagen pagina van Dior foto 1">
-  <img src="readme-images/cadeaus_dior2.jpg " width="375px" alt="De cadeaus voor de feestdagen pagina van Dior foto 2">
+  <img src="readme-images/cadeaus_dior1.jpg" width="375px" alt="De cadeaus voor de feestdagen pagina van Dior foto 1">
+  <img src="readme-images/cadeaus_dior2.jpg" width="375px" alt="De cadeaus voor de feestdagen pagina van Dior foto 2">
  
 </details>
 
