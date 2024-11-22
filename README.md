@@ -58,6 +58,24 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen:
+  de welkom op dior.com pop up knoppen doen het niet.
+  hij stopt met de slides op de laatste, de slide doet het niet goed omdat het een groep is. de tekst is selecteerbaar. 
+  In de slide is de link naar feestdagen cadeaus voor haar bijna niet te selecteren. Hij kan niet bij de filters, wel uitvouwen door op de knop te klikken maar kan niet filteren.
+  De afbeeldingen hebben geen goede alt test. Je kan niet eens op de afbeelding klikken omdat er geen titel mee is om mee te werken. 
+  Hij vertelt de prijs alleen als je hem alles laat voorlezen en niet met de pijltjes.
+   
+  Aller eerste pagina: Dior kop vertelt hij dubbel. Je kan alleen naar de pagina door op de video te klikken, maar de link van ontdek leest hij niet eens voor.
+  de links hebben ook geen goede alt tekst.
+  
+
+  Een toegankelijkheids knop voor beter contrast onderaan de pagina.
+
+  Uit de WCAG checklist komt dat de content niet toegankelijk is, dit komt door het gebruik van veel dure woorden zoals keperzijde om producten te beschrijven, hierdoor klinkt het duurde. Dit is echter lastig te veranderen omdat de producten alleen op die manier beschrijven kunnen worden.
+  Verder had de HTML veel foutmeldingen. Dit heb ik gechecked in de console, want de link van de webstite deed het niet bij de HTML checker van WCAG.
+  Verder waren de images ook heel slecht toegankelijk en hadden niet alle afbeeldingen een goede alt tekst.
+  De video's beginnen wel met autoplay maar kunnen gepauzeerd worden.
+  Het contrast was erg goed, dit komt omdat Dior hiervoor een toggle knop heeft om hoger contrast aan te zetten.
+  Volgens de WCAG checklist kan Dior veel dingen beter doen op het gebied van toegankelijkheid, maar zijn er gelukkig ook een paar dingen die ze wel goed doen, zoals contrast en keyboard.
 
 </details>
 
@@ -69,13 +87,13 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken na afloop 3<sup>e</sup> werkgroep</summary>
 
   ### de hele pagina: 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van de hele pagina">
+  <img src="readme-images/dior breakdown full.png" width="375px" alt="breakdown van de hele pagina">
 
   ### dynamisch deel (bijv menu): 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van een dynamisch deel">
+  <img src="readme-images/dior breakdown deel.png" width="375px" alt="breakdown van een dynamisch deel">
 
   ### wellicht nog een dynamisch deel (bijv filter): 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van nog een dynamisch deel">
+  <img src="readme-images/dior breakdown deel2.png" width="375px" alt="breakdown van nog een dynamisch deel">
 
 </details>
 
@@ -90,16 +108,19 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   ### Stand van zaken
   hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+  Het hamburger menu is tot nu toe nog niet gelukt, maar ik moet nog even verder kijken of ik ergens een goede uitleg kan vinden voor hoe het precies gemaakt moet worden.
+<img src="readme-images/menu week 1.png" width="375px" alt="Hamburger menu tot nu toe">
+
+Font toepassen met @fontface is nog niet gelukt
+<img src="readme-images/fontface.png" width="375px" alt="code @fontface">
 
 
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
+  | student 1      
+  |Mag je gewoon zelf een font kiezen dat er op lijkt of moet je echt hetzelfde font gebruiken.
+  | student 2          | student 3    | student 4        |
 
 
   ### Verslag van meeting

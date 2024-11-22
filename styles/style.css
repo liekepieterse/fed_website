@@ -1,0 +1,50 @@
+/**************/
+/* CSS REMEDY */
+/**************/
+*, *::after, *::before {
+  box-sizing:border-box;  
+}
+
+
+
+
+@font-face {
+    font-family: 'Hellix';
+    src: url('Hellix-Regular.eot');
+    src: local('Hellix Regular'), local('Hellix-Regular'),
+        url('Hellix-Regular.woff2') format('woff2'),
+        url('Hellix-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*********************/
+/* CUSTOM PROPERTIES */
+/*********************/
+:root {
+	/* startje */
+	--color-text:#373C40;
+	--color-background:#FAF4EC;
+}
+
+
+
+
+
+/****************/
+/* JOUW STYLING */
+/****************/
+
+/* jouw code */
+body{
+	background-color: var(--color-background);
+	color:var(--color-text)
+}
+
+header li{
+	list-style: none;
+}
+
+p{
+  font-family: Hellix, arial;
+}
