@@ -126,10 +126,9 @@ Font toepassen met @fontface is nog niet gelukt
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
+  - font kan gedowload worden door bij google te inspecteren en dan te kijken bij netwerk en dan font.
+  - Als er een woord uit een andere taal is kan je dit aanpassen in de tekst zelf door <span lang="en">hello<span>
+  - De product namen moeten H3tjes zijn en de H2 kan op hidden worden gezet door de code van a11y en dan de tekst die je op hidden wilt zetten de class van de css geven aan de tekst.
 
 </details>
 

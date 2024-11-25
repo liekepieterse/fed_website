@@ -1,30 +1,74 @@
 /**************/
 /* CSS REMEDY */
 /**************/
-*, *::after, *::before {
-  box-sizing:border-box;  
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
 }
 
-
-
-
+/* Dior font */
 @font-face {
-    font-family: 'Hellix';
-    src: url('Hellix-Regular.eot');
-    src: local('Hellix Regular'), local('Hellix-Regular'),
-        url('Hellix-Regular.woff2') format('woff2'),
-        url('Hellix-Regular.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
+  font-family: 'Atacama';
+  src: url('/fonts/AtacamaVAR-VF.woff2') format('woff2');
+  font-weight: 100 900;
+  font-style: normal;
 }
+
+
+/* Light (300) */
+@font-face {
+  font-family: 'Hellix';
+  src: url('/fonts/hellix-light.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+}
+
+/* Regular (400) */
+@font-face {
+  font-family: 'Hellix';
+  src: url('/fonts/hellix-regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Medium (500) */
+@font-face {
+  font-family: 'Hellix';
+  src: url('/fonts/hellix-medium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+}
+
+/* Semi-Bold (600) */
+@font-face {
+  font-family: 'Hellix';
+  src: url('/fonts/hellix-semi-bold.woff2') format('woff2');
+  font-weight: 600;
+  font-style: normal;
+}
+
+/* Bold (700) */
+@font-face {
+  font-family: 'Hellix';
+  src: url('/fonts/hellix-bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+}
+
+
+
 
 /*********************/
 /* CUSTOM PROPERTIES */
 /*********************/
 :root {
-	/* startje */
-	--color-text:#373C40;
-	--color-background:#FAF4EC;
+  /* startje */
+  --color-text: #373C40;
+  --color-background: #F8F8F8;
+  --background-color-menu: #FFFFFF;
+  --hamburger-menu-color: #040404;
+  --hamburger-color:#FFFFFF;
 }
 
 
@@ -36,15 +80,155 @@
 /****************/
 
 /* jouw code */
-body{
-	background-color: var(--color-background);
-	color:var(--color-text)
+body {
+  background-color: var(--color-background);
+  color: var(--color-text);
 }
 
-header li{
-	list-style: none;
+li {
+  list-style: none;
 }
 
-p{
-  font-family: Hellix, arial;
+h1 {
+  font-family: Atacama, Arial;
+}
+
+
+h3,
+p,
+li, 
+a{
+  font-family: Hellix, Arial;
+}
+
+h3{
+  font-size: 1em;
+  font-weight: 500;
+}
+
+.visually-hidden {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+} /* bron: https://www.a11yproject.com/posts/how-to-hide-content/ */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Hamburgermenu */
+nav ul{
+background-color: var(--background-color-menu);
+height:95vh;
+width: 100%;
+max-width: 450px;
+position:fixed;
+top: 0;
+right: 100%;
+transition: 1s ease;
+padding: 2em;
+border-radius: 2em;
+}
+
+
+nav button{
+  height: 2em;
+  width: 2em;
+  position: relative;
+  background: transparent;
+  border: none;
+  cursor:pointer;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  order: -2;
+}
+
+nav button span{
+  height: 0.15em;
+  width: 100%;
+  background-color: var(--hamburger-color);
+  border-radius:2em;
+  position:absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: 0.5s ease;
+}
+
+nav button span:nth-child(1){
+  top:0%;
+}
+
+nav button.active span:nth-child(1){
+  top:50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+  background-color: var(--hamburger-menu-color);
+}
+
+nav button.active span:nth-child(2){
+  top:50%;
+  transform: translate(-50%, -50%) rotate(-45deg);
+  background-color: var(--hamburger-menu-color);
+}
+
+nav ul.active{
+  left: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* header iconen */
+nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1em;
+}
+
+nav img{
+  height: 1em;
+}
+
+nav img:nth-of-type(1){
+height: 2em;
+margin: auto;
+}
+
+nav img:nth-of-type(2){
+order: -1;
+justify-content: start;
+margin: 1em;
+}
+
+nav img:nth-of-type(3), nav img:nth-of-type(4), nav img:nth-of-type(5){
+  display:flex;
+  align-items: center;
+  margin: 1em;
 }
