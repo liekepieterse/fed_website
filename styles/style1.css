@@ -1,4 +1,17 @@
 
+header h1, header section:nth-of-type(1) a{
+  color:#ffff;
+  
+}
+
+header a{
+ text-decoration: underline;
+}
+
+main{
+  margin: 1em;
+}
+
 p{
   display:flex;
   justify-content: center;
@@ -10,72 +23,150 @@ a{
   color: var(--color-text);
 }
 
-header a{
-  text-decoration-line: none;
+
+header{
+  position:relative;
+  overflow:hidden;
+  height: 100vh;
 }
 
-p a{
-  display:inline-block;
+
+video{
+width:100%;
+height:80vh;
+object-fit:cover;
+position:absolute;
+top:0;
+left:0;
+bottom: 0;
+z-index: -10;
 }
+
+
 
 section:nth-of-type(3){
   margin: 1em;
 }
 
 
-section:nth-of-type(2) {
+
+
+
+
+
+
+
+/* filter en sorteer knop */
+main button{
+  background: transparent;
+  border: none;
+  text-decoration: underline;
+  cursor:pointer;
+  position:relative;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* producten lijst */
+section:nth-of-type(2) ul{
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 1em;
 }
 
 @media (min-width: 1024px) {
-  section:nth-last-of-type(2) {
+  section:nth-last-of-type(2) ul{
     grid-template-columns: repeat(3, 1fr);
+  }
+
+  video{
+    position:static
   }
 }
 
-section:nth-of-type(2) img {
+section:nth-of-type(2) ul img {
   max-width: 100%;
   height: auto;
 
 }
 
-section:nth-of-type(2) article:nth-of-type(1),
-section:nth-of-type(2) article:nth-of-type(6),
-section:nth-of-type(2) article:nth-of-type(11) {
+section:nth-of-type(2) ul li:nth-of-type(1),
+section:nth-of-type(2) ul li:nth-of-type(6),
+section:nth-of-type(2) ul li:nth-of-type(11) {
   grid-column-start: 1;
   grid-column-end: -1;
 }
 
 @media (min-width: 1024px) {
 
-  section:nth-last-of-type(2) article:nth-of-type(1),
-  section:nth-of-type(2) article:nth-of-type(6),
-  section:nth-of-type(2) article:nth-of-type(11) {
+  section:nth-last-of-type(2) ul li:nth-of-type(1),
+  section:nth-of-type(2) ul li:nth-of-type(6),
+  section:nth-of-type(2) ul li:nth-of-type(11) {
     grid-column: auto;
   }
 }
 
-section:nth-of-type(2) p, section:nth-of-type(2) h3{
+section:nth-of-type(2) ul p, section:nth-of-type(1) ul h3{
+grid-column:2;
+}
+
+section:nth-of-type(2) ul li{
+position:relative;
 display: flex;
-justify-content: center;
+flex-direction: column;
+align-items: center; 
 }
 
-section:nth-of-type(2) article{
-  display:flex;
-  flex-direction: column;
+section:nth-of-type(2)ul li img{
+  order: 3;
+  width: 100%;
+  height:auto;
 }
 
-section:nth-of-type(2) article img{
-  order: -1;
-}
-
-section:nth-of-type(2) article p:nth-of-type(2){
+section:nth-of-type(2) ul li p:nth-of-type(2){
  justify-content: flex-start;
  align-items: flex-start;
  z-index: 1;
 }
 
+section:nth-of-type(2) ul li h3{
+  order:1;
+  text-align: center;
+}
+
+section:nth-of-type(2) ul li p:nth-of-type(1){
+order:2;
+text-align: center;
+}
+
+section:nth-of-type(2) ul li p:nth-of-type(2){
+  position:absolute;
+  top:1em;
+  left: 1em
+}
 
 
+
+
+
+
+
+
+
+
+
+
+
+/* Er mist een span bij het hamburger menu.
+De h1 en de a krijg ik niet in het midden.
+De linkjes in de tekst onderaan doen raar. 
+In de html heb ik een error die zegt dat ik een label nodig heb,
+  maar ik heb al een label.*/

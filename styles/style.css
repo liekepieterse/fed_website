@@ -5,6 +5,8 @@
 *::after,
 *::before {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 /* Dior font */
@@ -97,7 +99,8 @@ h1 {
 h3,
 p,
 li, 
-a{
+a,
+button{
   font-family: Hellix, Arial;
 }
 
@@ -173,7 +176,11 @@ nav button span{
 }
 
 nav button span:nth-child(1){
-  top:0%;
+  top:50%;
+}
+
+nav button.active{
+  position:fixed;
 }
 
 nav button.active span:nth-child(1){
