@@ -65,6 +65,26 @@ main button{
   position:relative;
 }
 
+/* main ul:nth-of-type(2){
+  background-color: var(--background-color-menu);
+  height:80vh;
+  width: 100%;
+  max-width: 100%;
+  position:fixed;
+  top: 0;
+  right: 100%;
+  transition: 1s ease;
+  padding: 2em;
+  border-radius: 2em;
+  }
+
+  main button:nth-of-type(1).active{
+    position:fixed;
+  }
+  
+  main button:nth-of-type(1).active{
+    left: 0;
+  } */
 
 
 
@@ -88,7 +108,7 @@ section:nth-of-type(2) ul{
   }
 
   video{
-    position:static
+    position:static;
   }
 }
 
@@ -140,6 +160,7 @@ section:nth-of-type(2) ul li p:nth-of-type(2){
 section:nth-of-type(2) ul li h3{
   order:1;
   text-align: center;
+  margin-top: 1em;
 }
 
 section:nth-of-type(2) ul li p:nth-of-type(1){
@@ -165,8 +186,13 @@ section:nth-of-type(2) ul li p:nth-of-type(2){
 
 
 
-/* Er mist een span bij het hamburger menu.
+/* 
+Er mist een span bij het hamburger menu.
 De h1 en de a krijg ik niet in het midden.
 De linkjes in de tekst onderaan doen raar. 
 In de html heb ik een error die zegt dat ik een label nodig heb,
-  maar ik heb al een label.*/
+  maar ik heb al een label.
+De list style bij de details wil niet weg.
+Hamburger mag geen p in de button maar moet wel tekst hebben.
+Moet ik alles linken naar de echte dior pagina of kunnen het gewoon dode linkjes blijven.
+  */
