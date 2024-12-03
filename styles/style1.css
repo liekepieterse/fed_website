@@ -13,7 +13,6 @@ main{
 }
 
 p{
-  display:flex;
   justify-content: center;
   align-items:center;
   flex-wrap: wrap;
@@ -44,8 +43,57 @@ z-index: -10;
 
 
 
+header section:nth-of-type(1){
+  height:70vh;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap:1em;
+}
+
+header section:nth-of-type(1) img{
+  overflow-x: auto;
+}
+
+
 section:nth-of-type(3){
   margin: 1em;
+  display: flex;
+  justify-content: center;
+}
+
+section:nth-of-type(3) p{
+  max-width: 40em;
+  text-align: center;
+}
+
+
+
+/* eerte sectie main */
+main section:nth-of-type(1) section img{
+  overflow-x: auto;
+}
+
+main section:nth-of-type(1){
+ display: grid;
+ grid-template-rows: 1fr,1fr,1fr;
+ grid-template-columns: auto;
+} 
+
+main section:nth-of-type(1) ul:nth-of-type(1){
+display: flex;
+overflow-x: auto;
+gap: 1em;
+grid-row-start: 1;
+}
+
+main section:nth-of-type(1) button{
+align-items: end;
+}
+
+section:nth-of-type(1) p{
+  text-align: center;
 }
 
 
@@ -56,35 +104,147 @@ section:nth-of-type(3){
 
 
 
-/* filter en sorteer knop */
-main button{
+
+
+/* filter knop */
+main  button:nth-of-type(1){
   background: transparent;
   border: none;
   text-decoration: underline;
   cursor:pointer;
-  position:relative;
+ align-items: end;
 }
 
-/* main ul:nth-of-type(2){
-  background-color: var(--background-color-menu);
-  height:80vh;
+main ul:nth-of-type(2) button:nth-of-type(1){
+  background: var(--color-text);
+  border: none;
+  text-decoration: none;
+  cursor:pointer;
+  top:1em;
+  right:1em;
+  z-index:40;
+  color: var(--wit);
+  padding: 1em;
   width: 100%;
-  max-width: 100%;
+  border-radius: 0.5em ;
+}
+
+
+main ul:nth-of-type(2){
+  background-color: var(--background-color-menu);
+  height:50vh;
+  width: 100%;
   position:fixed;
-  top: 0;
-  right: 100%;
+  bottom: 0;
+  right: 0;
   transition: 1s ease;
   padding: 2em;
   border-radius: 2em;
+  z-index:30;
+  transform: translateY(100%);
   }
 
-  main button:nth-of-type(1).active{
-    position:fixed;
+  main ul:nth-of-type(2) li:nth-of-type(1){
+    width: auto;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
   
-  main button:nth-of-type(1).active{
-    left: 0;
-  } */
+  main ul:nth-of-type(2) h4{
+   text-align: center;
+   margin:1em;
+  }
+
+  main ul:nth-of-type(2) li:nth-of-type(1) img{
+    height: 1em;
+    align-items:end ;
+    left: 1em;
+    cursor:pointer;
+    top:1em;
+    right:1em;
+  }
+
+  
+  main ul:nth-of-type(2).active{
+    transform: translateY(0);
+  }
+
+
+
+
+
+
+  /*sorteer volgens*/
+  main  button:nth-of-type(2){
+    background: transparent;
+    border: none;
+    text-decoration: underline;
+    cursor:pointer;
+  }
+  
+  main ul:nth-of-type(3) button:nth-of-type(1){
+    background: var(--color-text);
+    border: none;
+    text-decoration: none;
+    cursor:pointer;
+    top:1em;
+    right:1em;
+    z-index:40;
+    color: var(--wit);
+    padding: 1em;
+    width: 100%;
+    border-radius: 0.5em ;
+  }
+  
+  
+  main ul:nth-of-type(3){
+    background-color: var(--background-color-menu);
+    height:50vh;
+    width: 100%;
+    position:fixed;
+    bottom: 0;
+    right: 0;
+    transition: 1s ease;
+    padding: 2em;
+    border-radius: 2em;
+    z-index:30;
+    transform: translateY(100%);
+    }
+  
+    main ul:nth-of-type(3) li:nth-of-type(1){
+      width: auto;
+      position: relative;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom:0.09em ;
+      border-bottom-style: solid;
+    }
+
+    main ul:nth-of-type(3) li{
+      margin:1em;
+    }
+    
+    main ul:nth-of-type(3) h4{
+     text-align: center;
+     margin:1em;
+    }
+  
+    main ul:nth-of-type(3) li:nth-of-type(1) img{
+      height: 1em;
+      align-items:end ;
+      left: 1em;
+      cursor:pointer;
+      top:1em;
+      right:1em;
+    }
+  
+    
+    main ul:nth-of-type(3).active{
+      transform: translateY(0);
+    }
 
 
 
@@ -177,7 +337,11 @@ section:nth-of-type(2) ul li p:nth-of-type(2){
 
 
 
-
+/* 
+ul footer aanpassen naar sections en kleine litjes en geen grote ul meer.
+Op teams carousel kijken en namaken.
+Image veranderen op hover met opacity van 0 naar 1 van ander image.
+*/
 
 
 
@@ -187,12 +351,9 @@ section:nth-of-type(2) ul li p:nth-of-type(2){
 
 
 /* 
-Er mist een span bij het hamburger menu.
-De h1 en de a krijg ik niet in het midden.
-De linkjes in de tekst onderaan doen raar. 
-In de html heb ik een error die zegt dat ik een label nodig heb,
-  maar ik heb al een label.
-De list style bij de details wil niet weg.
 Hamburger mag geen p in de button maar moet wel tekst hebben.
 Moet ik alles linken naar de echte dior pagina of kunnen het gewoon dode linkjes blijven.
+Kan je met hover een img veranderen of moet dat op een andere manier.
+Hoe moet ik de slider in de header maken?
+In de footer komen er allmaal streepjes onder dingen waar ik geen streepjes onder gezet heb.
   */

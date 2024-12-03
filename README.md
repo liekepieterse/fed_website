@@ -205,10 +205,10 @@ Font toepassen met @fontface is nog niet gelukt
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
+  -voor de hamburger moest ik de nth-child aanpassen naar nth-of-type en de top % van de tweede span aanpassen.
+  -voor de header was het probleem dat de section waar de tekst in staat niet even groot is als de video. De manier om dit op t elossen is door de heigth van de section aan te passen.
+  -Voor de pijltjes bij de details die ik niet weg kreeg is de oplossing de list-style-type none op de summary te zetten in plaats van de details.
+  -voor de linkjes in de footer tekst stond er een algemene p met display flex waardoor hij alles op een nieuwe regel neerzette.
 
 </details>
 
