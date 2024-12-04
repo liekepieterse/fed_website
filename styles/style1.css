@@ -1,100 +1,101 @@
-
-header h1, header section:nth-of-type(1) a{
-  color:#ffff;
-  
+h1,
+main section:nth-of-type(1) a {
+  color: #ffff;
 }
 
-header a{
- text-decoration: underline;
-}
 
-main{
+main {
   margin: 1em;
 }
 
-p{
-  justify-content: center;
-  align-items:center;
-  flex-wrap: wrap;
-}
 
-a{
+
+a {
   color: var(--color-text);
 }
 
 
-header{
-  position:relative;
-  overflow:hidden;
-  height: 100vh;
-}
 
 
-video{
-width:100%;
-height:80vh;
-object-fit:cover;
-position:absolute;
-top:0;
-left:0;
-bottom: 0;
-z-index: -10;
+section:nth-of-type(4) {
+  margin: 1em;
+  display: flex;
 }
 
 
 
-header section:nth-of-type(1){
-  height:70vh;
-  display:flex;
+
+
+
+/*tekst onder productenlijst*/
+section:nth-of-type(4) p {
+  max-width: 40em;
+  text-align: center;
+  flex-wrap: wrap;
+}
+
+
+
+
+
+
+
+
+/* video */
+video {
+  width: 100%;
+  height: 80vh;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  z-index: -10;
+}
+
+@media (min-width: 1024px) {
+  video {
+    position: static;
+  }
+}
+
+section:nth-of-type(1) {
+  height: 55vh;
+  display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  gap:1em;
-}
-
-header section:nth-of-type(1) img{
-  overflow-x: auto;
+  gap: 1em;
+  margin-bottom: 15vh;
 }
 
 
-section:nth-of-type(3){
-  margin: 1em;
-  display: flex;
-  justify-content: center;
+section:nth-of-type(1) img {
+  max-width: 5em;
 }
 
-section:nth-of-type(3) p{
+main a:nth-of-type(1) {
+  text-decoration: underline;
+
+}
+
+main p:nth-of-type(1){
+  text-align: center;
   max-width: 40em;
-  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin: 3em;
+}
+
+
+main p:nth-of-type(2){
+  position: absolute;
+  bottom:1em;
+  left: 1.5em;
 }
 
 
 
-/* eerte sectie main */
-main section:nth-of-type(1) section img{
-  overflow-x: auto;
-}
-
-main section:nth-of-type(1){
- display: grid;
- grid-template-rows: 1fr,1fr,1fr;
- grid-template-columns: auto;
-} 
-
-main section:nth-of-type(1) ul:nth-of-type(1){
-display: flex;
-overflow-x: auto;
-gap: 1em;
-grid-row-start: 1;
-}
-
-main section:nth-of-type(1) button{
-align-items: end;
-}
-
-section:nth-of-type(1) p{
-  text-align: center;
-}
 
 
 
@@ -107,146 +108,200 @@ section:nth-of-type(1) p{
 
 
 /* filter knop */
-main  button:nth-of-type(1){
+main section:nth-of-type(2) button:nth-of-type(1){
   background: transparent;
   border: none;
   text-decoration: underline;
-  cursor:pointer;
- align-items: end;
+  cursor: pointer;
+  align-items: end;
 }
 
-main ul:nth-of-type(2) button:nth-of-type(1){
+main section:nth-of-type(2) ul:nth-of-type(1) button:nth-of-type(1){
   background: var(--color-text);
   border: none;
   text-decoration: none;
-  cursor:pointer;
-  top:1em;
-  right:1em;
-  z-index:40;
+  cursor: pointer;
+  top: 1em;
+  right: 1em;
+  z-index: 40;
   color: var(--wit);
   padding: 1em;
   width: 100%;
-  border-radius: 0.5em ;
+  border-radius: 0.5em;
 }
 
-
-main ul:nth-of-type(2){
+main section:nth-of-type(2) ul:nth-of-type(1) {
   background-color: var(--background-color-menu);
-  height:50vh;
+  height: 50vh;
   width: 100%;
-  position:fixed;
+  position: fixed;
   bottom: 0;
   right: 0;
   transition: 1s ease;
   padding: 2em;
   border-radius: 2em;
-  z-index:30;
+  z-index: 30;
   transform: translateY(100%);
-  }
-
-  main ul:nth-of-type(2) li:nth-of-type(1){
-    width: auto;
-    position: relative;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  main ul:nth-of-type(2) h4{
-   text-align: center;
-   margin:1em;
-  }
-
-  main ul:nth-of-type(2) li:nth-of-type(1) img{
-    height: 1em;
-    align-items:end ;
-    left: 1em;
-    cursor:pointer;
-    top:1em;
-    right:1em;
-  }
-
-  
-  main ul:nth-of-type(2).active{
-    transform: translateY(0);
-  }
+}
 
 
+main section:nth-of-type(2) ul:nth-of-type(1) button:nth-of-type(1) {
+  background: var(--color-text);
+  border: none;
+  text-decoration: none;
+  cursor: pointer;
+  top: 1em;
+  right: 1em;
+  z-index: 40;
+  color: var(--wit);
+  padding: 1em;
+  width: 100%;
+  border-radius: 0.5em;
+}
+
+
+main section:nth-of-type(2) ul:nth-of-type(1) {
+  background-color: var(--background-color-menu);
+  height: 50vh;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  transition: 1s ease;
+  padding: 2em;
+  border-radius: 2em;
+  z-index: 30;
+  transform: translateY(100%);
+}
+
+main section:nth-of-type(2) ul:nth-of-type(1) li:nth-of-type(1) {
+  width: auto;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+main section:nth-of-type(2) ul:nth-of-type(1) h4 {
+  text-align: center;
+  margin: 1em;
+}
+
+main section:nth-of-type(2) ul:nth-of-type(1) li:nth-of-type(1) img {
+  height: 1em;
+  align-items: end;
+  left: 1em;
+  cursor: pointer;
+  top: 1em;
+  right: 1em;
+}
+
+
+main section:nth-of-type(2) ul:nth-of-type(1).active {
+  transform: translateY(0);
+} 
 
 
 
 
-  /*sorteer volgens*/
-  main  button:nth-of-type(2){
-    background: transparent;
-    border: none;
-    text-decoration: underline;
-    cursor:pointer;
-  }
-  
-  main ul:nth-of-type(3) button:nth-of-type(1){
-    background: var(--color-text);
-    border: none;
-    text-decoration: none;
-    cursor:pointer;
-    top:1em;
-    right:1em;
-    z-index:40;
-    color: var(--wit);
-    padding: 1em;
-    width: 100%;
-    border-radius: 0.5em ;
-  }
-  
-  
-  main ul:nth-of-type(3){
-    background-color: var(--background-color-menu);
-    height:50vh;
-    width: 100%;
-    position:fixed;
-    bottom: 0;
-    right: 0;
-    transition: 1s ease;
-    padding: 2em;
-    border-radius: 2em;
-    z-index:30;
-    transform: translateY(100%);
-    }
-  
-    main ul:nth-of-type(3) li:nth-of-type(1){
-      width: auto;
-      position: relative;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      border-bottom:0.09em ;
-      border-bottom-style: solid;
-    }
-
-    main ul:nth-of-type(3) li{
-      margin:1em;
-    }
-    
-    main ul:nth-of-type(3) h4{
-     text-align: center;
-     margin:1em;
-    }
-  
-    main ul:nth-of-type(3) li:nth-of-type(1) img{
-      height: 1em;
-      align-items:end ;
-      left: 1em;
-      cursor:pointer;
-      top:1em;
-      right:1em;
-    }
-  
-    
-    main ul:nth-of-type(3).active{
-      transform: translateY(0);
-    }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*sorteer volgens*/
+main section:nth-of-type(2) button:nth-of-type(2){
+  background: transparent;
+  border: none;
+  text-decoration: underline;
+  cursor: pointer;
+  align-items: end;
+  margin-left: 1em;
+}
+
+main section:nth-of-type(2) ul:nth-of-type(2) button:nth-of-type(1) {
+  background: var(--color-text);
+  border: none;
+  text-decoration: none;
+  cursor: pointer;
+  top: 1em;
+  right: 1em;
+  z-index: 40;
+  color: var(--wit);
+  padding: 1em;
+  width: 100%;
+  border-radius: 0.5em;
+}
+
+
+main section:nth-of-type(2) ul:nth-of-type(2) {
+  background-color: var(--background-color-menu);
+  height: 40vh;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  transition: 1s ease;
+  padding: 2em;
+  border-radius: 2em;
+  z-index: 30;
+  transform: translateY(100%);
+}
+
+main section:nth-of-type(2) ul:nth-of-type(2) li:nth-of-type(1) {
+  width: auto;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 0.09em;
+  border-bottom-style: solid;
+}
+
+main section:nth-of-type(2) ul:nth-of-type(2) li {
+  margin: 1em;
+}
+
+main section:nth-of-type(2) ul:nth-of-type(2) h4 {
+  text-align: center;
+  margin: 1em;
+}
+
+main section:nth-of-type(2) ul:nth-of-type(2) li:nth-of-type(1) img {
+  height: 1em;
+  align-items: end;
+  left: 1em;
+  cursor: pointer;
+  top: 1em;
+  right: 1em;
+}
+
+
+main section:nth-of-type(2) ul:nth-of-type(2).active {
+  transform: translateY(0);
+}
+
+
+
+
+
+/*filter en sorteer knop*/
+
+main section:nth-of-type(2){
+  display:flex;
+  justify-content: end;
+  margin: 1em;
+}
 
 
 
@@ -256,81 +311,78 @@ main ul:nth-of-type(2){
 
 
 /* producten lijst */
-section:nth-of-type(2) ul{
+section:nth-of-type(3) ul {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 1em;
 }
 
 @media (min-width: 1024px) {
-  section:nth-last-of-type(2) ul{
+  section:nth-of-type(3) ul {
     grid-template-columns: repeat(3, 1fr);
-  }
-
-  video{
-    position:static;
   }
 }
 
-section:nth-of-type(2) ul img {
+section:nth-of-type(3) ul img {
   max-width: 100%;
   height: auto;
 
 }
 
-section:nth-of-type(2) ul li:nth-of-type(1),
-section:nth-of-type(2) ul li:nth-of-type(6),
-section:nth-of-type(2) ul li:nth-of-type(11) {
+section:nth-of-type(3) ul li:nth-of-type(1),
+section:nth-of-type(3) ul li:nth-of-type(6),
+section:nth-of-type(3) ul li:nth-of-type(11) {
   grid-column-start: 1;
   grid-column-end: -1;
 }
 
 @media (min-width: 1024px) {
 
-  section:nth-last-of-type(2) ul li:nth-of-type(1),
-  section:nth-of-type(2) ul li:nth-of-type(6),
-  section:nth-of-type(2) ul li:nth-of-type(11) {
+  section:nth-of-type(3) ul li:nth-of-type(1),
+  section:nth-of-type(3) ul li:nth-of-type(6),
+  section:nth-of-type(3) ul li:nth-of-type(11) {
     grid-column: auto;
   }
 }
 
-section:nth-of-type(2) ul p, section:nth-of-type(1) ul h3{
-grid-column:2;
+section:nth-of-type(3) ul p,
+section:nth-of-type(2) ul h3 {
+  grid-column: 2;
 }
 
-section:nth-of-type(2) ul li{
-position:relative;
-display: flex;
-flex-direction: column;
-align-items: center; 
+section:nth-of-type(3) ul li {
+  position: relative;
+  display: flex;
+  flex-direction: column;
 }
 
-section:nth-of-type(2)ul li img{
+section:nth-of-type(3)ul li img {
   order: 3;
   width: 100%;
-  height:auto;
+  height: auto;
 }
 
-section:nth-of-type(2) ul li p:nth-of-type(2){
- justify-content: flex-start;
- align-items: flex-start;
- z-index: 1;
+section:nth-of-type(3) ul li p:nth-of-type(2) {
+  justify-content: flex-start;
+  align-items: flex-start;
+  z-index: 1;
 }
 
-section:nth-of-type(2) ul li h3{
-  order:1;
+section:nth-of-type(3) ul li h3 {
+  order: 1;
   text-align: center;
   margin-top: 1em;
 }
 
-section:nth-of-type(2) ul li p:nth-of-type(1){
-order:2;
-text-align: center;
+section:nth-of-type(3) ul li p:nth-of-type(1) {
+  order: 2;
+  text-align: center;
+  margin:1em;
 }
 
-section:nth-of-type(2) ul li p:nth-of-type(2){
-  position:absolute;
-  top:1em;
+section:nth-of-type(3) ul li p:nth-of-type(2) {
+  position: absolute;
+  top: 1em;
   left: 1em
 }
 
@@ -338,8 +390,6 @@ section:nth-of-type(2) ul li p:nth-of-type(2){
 
 
 /* 
-ul footer aanpassen naar sections en kleine litjes en geen grote ul meer.
-Op teams carousel kijken en namaken.
 Image veranderen op hover met opacity van 0 naar 1 van ander image.
 */
 
@@ -353,7 +403,5 @@ Image veranderen op hover met opacity van 0 naar 1 van ander image.
 /* 
 Hamburger mag geen p in de button maar moet wel tekst hebben.
 Moet ik alles linken naar de echte dior pagina of kunnen het gewoon dode linkjes blijven.
-Kan je met hover een img veranderen of moet dat op een andere manier.
-Hoe moet ik de slider in de header maken?
-In de footer komen er allmaal streepjes onder dingen waar ik geen streepjes onder gezet heb.
+De tekst onder de video krijg ik niet in het midden.
   */
