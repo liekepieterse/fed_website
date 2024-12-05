@@ -2,7 +2,7 @@
 console.log("hi");
 
 
-// Hmaburger menu
+// Hamburger menu bron: https://youtu.be/aNDqzlAKmZc?si=_QBkHuhMWLj0btXJ
 
 const hamburgerStreepjes = document.querySelector("nav button");
 
@@ -12,7 +12,6 @@ hamburgerStreepjes.addEventListener("click", () => {
   hamburgerStreepjes.classList.toggle("active");
   hamburgerMenu.classList.toggle("active");
 });
-//  bron hamburger menu: https://youtu.be/aNDqzlAKmZc?si=_QBkHuhMWLj0btXJ
 
 
 
@@ -79,4 +78,41 @@ closeSorteer.addEventListener("click", () => {
 
 bekijksorteer.addEventListener("click", () => {
   uitgeklaptSorteer.classList.remove("active");
+});
+
+
+
+
+
+
+
+// play pause button bron: chatgpt
+const video = document.querySelector('video');
+const pauseButton = document.querySelector('main section:nth-of-type(1) img:nth-of-type(1)');
+const playButton = document.querySelector('main section:nth-of-type(1) img:nth-of-type(2)');
+
+function togglePlayPause(){
+  if (video.paused) {
+    video.play();
+    playButton.computedStyleMap.display = 'none';
+    pauseButton.computedStyleMap.display = 'block';
+  }
+ else{
+  video.pause();
+  playButton.computedStyleMap.display = 'block';
+  pauseButton.computedStyleMap.display = 'none';
+ }
+}
+
+playButton.addEventListener('click', togglePlayPause);
+pauseButton.addEventListener('click', togglePlayPause);
+
+video.addEventListener('play', () => {
+  playButton.style.display = 'none';
+  pauseButton.style.display = 'block';
+});
+
+video.addEventListener('pause', () => {
+  playButton.style.display = 'block';
+  pauseButton.style.display = 'none';
 });

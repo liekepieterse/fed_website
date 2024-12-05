@@ -34,6 +34,11 @@ section:nth-of-type(4) p {
   flex-wrap: wrap;
 }
 
+section:nth-of-type(4){
+  display: flex;
+  justify-content: center;
+}
+
 
 
 
@@ -96,7 +101,15 @@ main p:nth-of-type(2){
 
 
 
-
+/* Play, pause  */
+main section:nth-of-type(1) img{
+  display:none;
+  cursor:pointer;
+  position:absolute;
+  left:1em;
+  bottom:10em;
+  max-width: 3em;
+}
 
 
 
@@ -404,4 +417,6 @@ Image veranderen op hover met opacity van 0 naar 1 van ander image.
 Hamburger mag geen p in de button maar moet wel tekst hebben.
 Moet ik alles linken naar de echte dior pagina of kunnen het gewoon dode linkjes blijven.
 De tekst onder de video krijg ik niet in het midden.
+Het hamburgermenu gaat achter de andere dingen op de pagina als ik probeer te scrollen.
+Darkmode filters werken niet
   */
