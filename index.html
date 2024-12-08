@@ -95,11 +95,11 @@
 	<main>
 		<section>
 			<h1>Cadeaus voor haar voor de feestdagen</h1>
-			<a href="#">Ontdek</a>
+			<a href="footer">Ontdek</a>
 
 
-			
-			<video autoplay muted loop>
+
+			<video muted loop>
 				<source src="images/dior_video.mp4" type="video/mp4" />
 				Uw browser ondersteunt de video niet.
 			</video>
@@ -119,14 +119,20 @@
 				<li>
 					<details>
 						<summary>Categorie<img src="/images/menuopen.svg" alt="icoon voor een grijs pijltje"></summary>
-						<p>Armbanden</p>
+						<!-- <p>Armbanden</p>
 						<p>Boeken</p>
 						<p>Boots</p>
 						<p>Borden</p>
 						<p>Broches en accessoires</p>
 						<p>Colberts</p>
 						<p>Diamanten</p>
-						<p>Dienbladen</p>
+						<p>Dienbladen</p> -->
+						<label>
+							<input type="radio" value="tas" name="categorie">tas
+						</label>
+						<label>
+							<input type="radio" value="ring" name="categorie">ring
+						</label>
 					</details>
 				</li>
 				<li>
@@ -193,12 +199,13 @@
 					<img src="images/dior_twee_modelen_groot.jpg"
 						alt="Twee modellen met dior kleding en accessoires in een bruine strand omgeving.">
 				</li>
-				<li>
+				<li class="tas">
 					<h3>Middelgrote Dior toujours-tas</h3>
 					<p>€3.500,00 </p>
-					<a href="/product.html"> <img src="images/toujours_tas.jpg" alt="Zwarte tas van kalfsleer met Macrocannage motief"></a>
+					<a href="/product.html"> <img src="images/toujours_tas.jpg"
+							alt="Zwarte tas van kalfsleer met Macrocannage motief"></a>
 				</li>
-				<li>
+				<li class="ring">
 					<h3>Dio(r)evolution-ring</h3>
 					<p>€320,00</p>
 					<img src="images/diorevolution_ring.jpg"
@@ -276,24 +283,27 @@
 		</section>
 
 
-	
+
 	</main>
 	<footer>
 		<ul>
 			<li>
 				<h3>Ophalen in onze Boutique</h3>
-				<p>shop online en haal uw bestelling af in een Dior-boetiek naar keuze. <img src="images/menuopen.svg" alt="pijltje naar rechts"></p>
-				
+				<p>shop online en haal uw bestelling af in een Dior-boetiek naar keuze <img src="images/menuopen.svg"
+						alt="pijltje naar rechts"></p>
+
 			</li>
 			<li>
 				<h3>Kenmerkende Dior-verpakking</h3>
-				<p>Een voorbeeld en embleem van de knowhow van het modehuis</p>
-				<img src="images/menuopen.svg" alt="pijltje naar rechts">
+				<p>Een voorbeeld en embleem van de knowhow van het modehuis
+					<img src="images/menuopen.svg" alt="pijltje naar rechts">
+				</p>
+				
 			</li>
 			<li>
 				<h3>Gratis retouneren</h3>
-				<p>U kunt elke bestelling, die tussen 15 november en 15 januari is geplaatst, retourneren of ruilen</p>
-				<img src="images/menuopen.svg" alt="pijltje naar rechts">
+				<p>U kunt elke bestelling, die tussen 15 november en 15 januari is geplaatst, retourneren of ruilen <img src="images/menuopen.svg" alt="pijltje naar rechts"></p>
+				
 			</li>
 		</ul>
 		<h3>Inspireer me met al het laatste Dior-nieuws</h3>
@@ -384,8 +394,8 @@
 		</details>
 
 		<h3>Land/Regio</h3>
-		<p>Nederland(Nederlands)</p>
-		<img src="images/menuopen.svg" alt="pijltje naar rechts">
+		<p>Nederland(Nederlands)<img src="images/menuopen.svg" alt="pijltje naar rechts"></p>
+		
 
 		<ul>
 			<li>
@@ -418,7 +428,7 @@
 		</ul>
 		<img src="images/dior_logo_black.png" alt="Dior logo">
 	</footer>
-	
+
 	<script defer src="scripts/script.js"></script>
 </body>
 

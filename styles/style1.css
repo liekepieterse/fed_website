@@ -10,9 +10,7 @@ main {
 
 
 
-a {
-  color: var(--color-text);
-}
+
 
 
 
@@ -23,6 +21,10 @@ section:nth-of-type(4) {
 }
 
 
+
+nav button span {
+  background-color: var(--wit);
+}
 
 
 
@@ -65,7 +67,7 @@ video {
 }
 
 section:nth-of-type(1) {
-  height: 55vh;
+  height: 80vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -99,9 +101,6 @@ main p:nth-of-type(2){
   left: 1.5em;
 }
 
-
-
-/* Play, pause  */
 main section:nth-of-type(1) img{
   display:none;
   cursor:pointer;
@@ -185,6 +184,7 @@ main section:nth-of-type(2) ul:nth-of-type(1) {
   border-radius: 2em;
   z-index: 30;
   transform: translateY(100%);
+  overflow: auto;
 }
 
 main section:nth-of-type(2) ul:nth-of-type(1) li:nth-of-type(1) {
@@ -279,6 +279,7 @@ main section:nth-of-type(2) ul:nth-of-type(2) li:nth-of-type(1) {
   align-items: center;
   border-bottom: 0.09em;
   border-bottom-style: solid;
+  border-color: var(--footer-p);
 }
 
 main section:nth-of-type(2) ul:nth-of-type(2) li {
@@ -401,6 +402,12 @@ section:nth-of-type(3) ul li p:nth-of-type(2) {
 
 
 
+html:has([value="tas"]:checked) section:nth-of-type(3) ul li:not(.tas){
+  display: none;
+}
+
+
+
 
 /* 
 Image veranderen op hover met opacity van 0 naar 1 van ander image.
@@ -415,8 +422,5 @@ Image veranderen op hover met opacity van 0 naar 1 van ander image.
 
 /* 
 Hamburger mag geen p in de button maar moet wel tekst hebben.
-Moet ik alles linken naar de echte dior pagina of kunnen het gewoon dode linkjes blijven.
-De tekst onder de video krijg ik niet in het midden.
 Het hamburgermenu gaat achter de andere dingen op de pagina als ik probeer te scrollen.
-Darkmode filters werken niet
   */

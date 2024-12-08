@@ -195,15 +195,24 @@ De linkjes in de tekst onderaan de pagina staan raar.
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
+  | student 1 
+  Hoe kan ik de onlangs bekeken slider per twee laten snappen?
+  Hoe moet ik de video muten?
+  Moet ik alles linken naar de echte dior pagina of kunnen het gewoon dode linkjes blijven?
+  Is het lastig om een filter werkend te maken?
 
 
   ### Verslag van meeting
-  hier na afloop snel de uitkomsten van de meeting vastleggen
+  Ik moet voor alle carousels een balkje toevoegen om mee te sliden. Ook weet ik nu dat ik voor de carrousel met twee images main section:nth-of-type(6) ul li:nth-of-type(2n + 1) {
+    scroll-snap-align: start;
+} moet gebruiken om ze te laten snappen.
+Ook heb ik geleerd hoe je een video kan muten aan de hand van img en java script. 
+Niet alle linkjes hoeven te werken, alleen de link naar de andere pagina die je zelf gemaakt heb. 
+Ik heb geleerd dat je een filer kan laten werken door html:has([value="tas"]:checked) section:nth-of-type(3) ul li:not(.tas){
+  display: none;
+} in de css te zetten en <label>
+							<input type="radio" value="tas" name="categorie">tas
+						</label> in de html
 
  
 
