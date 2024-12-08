@@ -493,3 +493,13 @@ summary {
 details p {
   margin-top: 1em;
 }
+
+
+
+
+
+/* scrollbar */
+  /* ul::-webkit-scrollbar{
+    height: 2em;
+    color: aqua;
+  } */

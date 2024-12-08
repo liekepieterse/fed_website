@@ -212,7 +212,8 @@ Ik heb geleerd dat je een filer kan laten werken door html:has([value="tas"]:che
   display: none;
 } in de css te zetten en <label>
 							<input type="radio" value="tas" name="categorie">tas
-						</label> in de html
+						</label> in de html.
+Verder heb ik ook geleerd hoe je ervoor kan zorgen dat als een venster is uitgeklapt zoals het hamburger menu, je in het menu kan scrollen in plaats van op de pagina daarachter.
 
  
 
