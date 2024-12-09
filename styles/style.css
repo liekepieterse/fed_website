@@ -16,7 +16,7 @@
 /* Dior font */
 @font-face {
   font-family: 'Atacama';
-  src: url('fonts/AtacamaVAR-VF.woff2') format('woff2');
+  src: url('/fed_website/fonts/AtacamaVAR-VF.woff2') format('woff2');
   font-weight: 100 900;
   font-style: normal;
 }
@@ -25,7 +25,7 @@
 /* Light (300) */
 @font-face {
   font-family: 'Hellix';
-  src: url('fonts/hellix-light.woff2') format('woff2');
+  src: url('/fed_website/fonts/hellix-light.woff2') format('woff2');
   font-weight: 300;
   font-style: normal;
 }
@@ -33,7 +33,7 @@
 /* Regular (400) */
 @font-face {
   font-family: 'Hellix';
-  src: url('fonts/hellix-regular.woff2') format('woff2');
+  src: url('/fed_website/fonts/hellix-regular.woff2') format('woff2');
   font-weight: 400;
   font-style: normal;
 }
@@ -41,7 +41,7 @@
 /* Medium (500) */
 @font-face {
   font-family: 'Hellix';
-  src: url('fonts/hellix-medium.woff2') format('woff2');
+  src: url('/fed_website/fonts/hellix-medium.woff2') format('woff2');
   font-weight: 500;
   font-style: normal;
 }
@@ -49,7 +49,7 @@
 /* Semi-Bold (600) */
 @font-face {
   font-family: 'Hellix';
-  src: url('fonts/hellix-semi-bold.woff2') format('woff2');
+  src: url('/fed_website/fonts/hellix-semi-bold.woff2') format('woff2');
   font-weight: 600;
   font-style: normal;
 }
@@ -57,7 +57,7 @@
 /* Bold (700) */
 @font-face {
   font-family: 'Hellix';
-  src: url('fonts/hellix-bold.woff2') format('woff2');
+  src: url('/fed_website/fonts/hellix-bold.woff2') format('woff2');
   font-weight: 700;
   font-style: normal;
 }
