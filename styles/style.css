@@ -16,7 +16,7 @@
 /* Dior font */
 @font-face {
   font-family: 'Atacama';
-  src: url('/fonts/AtacamaVAR-VF.woff2') format('woff2');
+  src: url('/fed_website/fonts/AtacamaVAR-VF.woff2') format('woff2');
   font-weight: 100 900;
   font-style: normal;
 }
