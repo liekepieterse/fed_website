@@ -16,7 +16,7 @@
 /* Dior font */
 @font-face {
   font-family: 'Atacama';
-  src: url('/fonts/AtacamaVAR-VF.woff2') format('woff2');
+  src: url('../fonts/AtacamaVAR-VF.woff2') format('woff2');
   font-weight: 100 900;
   font-style: normal;
 }
@@ -25,7 +25,7 @@
 /* Light (300) */
 @font-face {
   font-family: 'Hellix';
-  src: url('/fonts/hellix-light.woff2') format('woff2');
+  src: url('../fonts/hellix-light.woff2') format('woff2');
   font-weight: 300;
   font-style: normal;
 }
@@ -33,7 +33,7 @@
 /* Regular (400) */
 @font-face {
   font-family: 'Hellix';
-  src: url('//fonts/hellix-regular.woff2') format('woff2');
+  src: url('../fonts/hellix-regular.woff2') format('woff2');
   font-weight: 400;
   font-style: normal;
 }
@@ -41,7 +41,7 @@
 /* Medium (500) */
 @font-face {
   font-family: 'Hellix';
-  src: url('/fonts/hellix-medium.woff2') format('woff2');
+  src: url('../fonts/hellix-medium.woff2') format('woff2');
   font-weight: 500;
   font-style: normal;
 }
@@ -49,7 +49,7 @@
 /* Semi-Bold (600) */
 @font-face {
   font-family: 'Hellix';
-  src: url('/fonts/hellix-semi-bold.woff2') format('woff2');
+  src: url('../fonts/hellix-semi-bold.woff2') format('woff2');
   font-weight: 600;
   font-style: normal;
 }
@@ -57,7 +57,7 @@
 /* Bold (700) */
 @font-face {
   font-family: 'Hellix';
-  src: url('/fonts/hellix-bold.woff2') format('woff2');
+  src: url('../fonts/hellix-bold.woff2') format('woff2');
   font-weight: 700;
   font-style: normal;
 }
@@ -73,7 +73,7 @@
   color-scheme: light dark;
   --color-text: light-dark(#373C40, #F8F8F8);
   --color-background: light-dark(#F8F8F8, #373c40);
-  --background-color-menu: light-dark(#FFFFFF,#040404);
+  --background-color-menu: light-dark(#efefef,#161515);
   --wit: #ffffff;
   --zwart: #040404;
   --footer-p: #7c868d;
@@ -95,7 +95,13 @@
 }
 
 
+html:has([value="dark"]:checked){
+  color-scheme: dark;
+}
 
+html:has([value="light"]:checked){
+  color-scheme: light;
+}
 
 
 
@@ -191,7 +197,7 @@ nav{
 }
 nav ul {
   background-color: var(--background-color-menu);
-  height: 95vh;
+  height: 100vh;
   width: 100%;
   max-width: 450px;
   position: fixed;
@@ -254,6 +260,8 @@ nav button.active span:nth-of-type(2) {
 
 nav ul.active {
   left: 0;
+  position: fixed;
+  overflow-y: auto;
 }
 
 nav li:nth-of-type(1){
@@ -341,16 +349,15 @@ footer {
 }
 
 footer > img{
-  display: flex;
-  justify-content: center;
-  width: 8em;
+  max-width: 10em;
+  align-self: center;
 }
 
 
 
 footer ul:nth-of-type(1) li:nth-of-type(1),
 footer ul:nth-of-type(1) li:nth-of-type(2),
-footer ul:nth-of-type(1) li:nth-of-type(3) {
+footer ul:nth-of-type(1) li:nth-of-type(3){
   border-bottom: 0.09em;
   border-bottom-style: solid;
   border-color: var(--footer-p);
@@ -403,6 +410,7 @@ footer ul:nth-of-type(4) {
   padding-bottom: 2em;
 }
 
+
 footer button {
   background: var(--color-text);
   border: none;
@@ -454,6 +462,10 @@ footer ul li p {
   display: flex;
 }
 
+footer> p img{
+  position: absolute;
+  right: 3em;
+}
 
 
 
@@ -496,10 +508,15 @@ details p {
 
 
 
+/* kerst thema */
+header > img{
+  display: none;
+  max-width: 100%;
+  position: fixed;
+  top: 0;
+}
 
+html:has([value="kerst"]:checked) header > img{
+ display:block;
+}
 
-/* scrollbar */
-  /* ul::-webkit-scrollbar{
-    height: 2em;
-    color: aqua;
-  } */

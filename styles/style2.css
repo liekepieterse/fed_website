@@ -324,10 +324,6 @@ main section:nth-of-type(6) ul {
     overscroll-behavior: contain auto;
 }
 
-main section:nth-of-type(6) ul::-webkit-scrollbar {
-    display: none;
-}
-
 main section:nth-of-type(6) ul img {
     max-width: 50vw;
 }

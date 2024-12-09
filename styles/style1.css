@@ -195,6 +195,19 @@ main section:nth-of-type(2) ul:nth-of-type(1) li:nth-of-type(1) {
   align-items: center;
 }
 
+main section:nth-of-type(2) ul:nth-of-type(1) li summary{
+  font-weight: 600;
+}
+
+main section:nth-of-type(2) ul:nth-of-type(1) li label:nth-of-type(1){
+  margin-top: 2em;
+}
+
+main section:nth-of-type(2) ul:nth-of-type(1) li label{
+  margin-top: 1em;
+  display: block;
+} 
+
 main section:nth-of-type(2) ul:nth-of-type(1) h4 {
   text-align: center;
   margin: 1em;
@@ -216,6 +229,45 @@ main section:nth-of-type(2) ul:nth-of-type(1).active {
 
 
 
+
+/* Filter categorie*/
+html:has([value="tassen"]:checked) section:nth-of-type(3) ul li:not(.tassen){
+  display: none;
+}
+
+html:has([value="sieraden"]:checked) section:nth-of-type(3) ul li:not(.sieraden){
+  display: none;
+}
+
+html:has([value="schoenen"]:checked) section:nth-of-type(3) ul li:not(.schoenen){
+  display: none;
+}
+
+html:has([value="sjalen"]:checked) section:nth-of-type(3) ul li:not(.sjalen){
+  display: none;
+}
+html:has([value="brillen"]:checked) section:nth-of-type(3) ul li:not(.brillen){
+  display: none;
+}
+
+
+
+/* Filter kleur*/
+html:has([value="zwart"]:checked) section:nth-of-type(3) ul li:not(.zwart){
+  display: none;
+}
+
+html:has([value="goud"]:checked) section:nth-of-type(3) ul li:not(.goud){
+  display: none;
+}
+
+html:has([value="beige"]:checked) section:nth-of-type(3) ul li:not(.beige){
+  display: none;
+}
+
+html:has([value="multicolor"]:checked) section:nth-of-type(3) ul li:not(.multicolor){
+  display: none;
+}
 
 
 
@@ -402,9 +454,9 @@ section:nth-of-type(3) ul li p:nth-of-type(2) {
 
 
 
-html:has([value="tas"]:checked) section:nth-of-type(3) ul li:not(.tas){
-  display: none;
-}
+
+
+
 
 
 

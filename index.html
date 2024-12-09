@@ -79,10 +79,13 @@
 					<a href="#">Land/regio wijzigen: Nederland (Nederlands)</a>
 				</li>
 				<li>
-					<a href="#">Toegankelijkheid: beter contrast</a>
+					<label><input type="checkbox" name="darkmode" value="dark"> Toegankelijkheid: dark-mode</label>
 				</li>
 				<li>
-					<a href="#">Toegankelijkheid: dark-mode</a>
+					<label><input type="checkbox" name="darkmode" value="light"> Toegankelijkheid: light-mode</label>
+				</li>
+				<li>
+					<label><input type="checkbox" name="thema" value="kerst"> Kerst feestje</label>
 				</li>
 			</ul>
 			<img src="images/dior_logo_white.png" alt="Dior logo">
@@ -91,6 +94,7 @@
 			<img src="images/account_icon_white.png" alt="account icoon">
 			<img src="images/shop_icon_white.png" alt="winkeltas icoon">
 		</nav>
+		<img src="images/kerst_ballen.png" alt="een slinger met rode en groene kersballen">
 	</header>
 	<main>
 		<section>
@@ -103,8 +107,8 @@
 				<source src="images/dior_video.mp4" type="video/mp4" />
 				Uw browser ondersteunt de video niet.
 			</video>
-			<img src="/images/pauze_knop.png" alt="pauze knop">
-			<img src="/images/play_knop.png" alt="play knop">
+			<img src="images/pauze_knop.png" alt="pauze knop">
+			<img src="images/play_knop.png" alt="play knop">
 		</section>
 		<p>Maak de momenten samen tijdens de magische kertperiode extra speciaal met een uniek cadeau
 			dat de elegantie van Diors dameskleding uitstraalt</p>
@@ -114,64 +118,49 @@
 			<ul>
 				<li>
 					<h4>Filter</h4>
-					<img src="/images/kruisje.svg" alt="kruisje">
+					<img src="images/kruisje.svg" alt="kruisje">
 				</li>
 				<li>
 					<details>
-						<summary>Categorie<img src="/images/menuopen.svg" alt="icoon voor een grijs pijltje"></summary>
-						<!-- <p>Armbanden</p>
-						<p>Boeken</p>
-						<p>Boots</p>
-						<p>Borden</p>
-						<p>Broches en accessoires</p>
-						<p>Colberts</p>
-						<p>Diamanten</p>
-						<p>Dienbladen</p> -->
+						<summary>Categorie<img src="images/menuopen.svg" alt="icoon voor een grijs pijltje"></summary>
 						<label>
-							<input type="radio" value="tas" name="categorie">tas
+							<input type="radio" value="tassen" name="categorie">tassen
 						</label>
 						<label>
-							<input type="radio" value="ring" name="categorie">ring
+							<input type="radio" value="sieraden" name="categorie">sieraden
+						</label>
+						<label>
+							<input type="radio" value="schoenen" name="categorie">schoenen
+						</label>
+						<label>
+							<input type="radio" value="sjalen" name="categorie">sjalen
+						</label>
+						<label>
+							<input type="radio" value="brillen" name="categorie">brillen
+						</label>
+						<label>
+							<input type="radio" value="alles" name="categorie">alles
 						</label>
 					</details>
 				</li>
 				<li>
 					<details>
-						<summary>Lijn<img src="/images/menuopen.svg" alt="icoon voor een grijs pijltje"></summary>
-						<p>30 Montaigne</p>
-						<p>Bowlingtas</p>
-						<p>Bucketbag</p>
-						<p>CD Navy</p>
-						<p>CDior</p>
-						<p>Clair D Lune</p>
-						<p>D-Connect</p>
-						<p>Dio(r)evolution</p>
-					</details>
-				</li>
-				<li>
-					<details>
-						<summary>Kleur<img src="/images/menuopen.svg" alt="icoon voor een grijs pijltje"></summary>
-						<p>Beige</p>
-						<p>Blauw</p>
-						<p>Bruin</p>
-						<p>Geel</p>
-						<p>Goud</p>
-						<p>Grijs</p>
-						<p>Groen</p>
-						<p>Multicolor</p>
-					</details>
-				</li>
-				<li>
-					<details>
-						<summary>Materiaal<img src="/images/menuopen.svg" alt="icoon voor een grijs pijltje"></summary>
-						<p>Acetaat</p>
-						<p>Bedrukt leer</p>
-						<p>Geborduurde stof</p>
-						<p>Geelgoud</p>
-						<p>Generfd leder</p>
-						<p>Glad leder</p>
-						<p>Goudkleurige afwerking</p>
-						<p>Hars</p>
+						<summary>Kleur<img src="images/menuopen.svg" alt="icoon voor een grijs pijltje"></summary>
+						<label>
+							<input type="radio" value="zwart" name="kleur">zwart
+						</label>
+						<label>
+							<input type="radio" value="goud" name="kleur">goud
+						</label>
+						<label>
+							<input type="radio" value="beige" name="kleur">beige
+						</label>
+						<label>
+							<input type="radio" value="multicolor" name="kleur">multicolor
+						</label>
+						<label>
+							<input type="radio" value="alles" name="kleur">alles
+						</label>
 					</details>
 				</li>
 				<li>
@@ -182,7 +171,7 @@
 			<ul>
 				<li>
 					<h4>Sorteer volgens</h4>
-					<img src="/images/kruisje.svg" alt="kruisje">
+					<img src="images/kruisje.svg" alt="kruisje">
 				</li>
 				<li>Aanbevolen</li>
 				<li>Toenemende Prijs</li>
@@ -199,26 +188,26 @@
 					<img src="images/dior_twee_modelen_groot.jpg"
 						alt="Twee modellen met dior kleding en accessoires in een bruine strand omgeving.">
 				</li>
-				<li class="tas">
+				<li class="tassen zwart">
 					<h3>Middelgrote Dior toujours-tas</h3>
 					<p>€3.500,00 </p>
 					<a href="product.html"> <img src="images/toujours_tas.jpg"
 							alt="Zwarte tas van kalfsleer met Macrocannage motief"></a>
 				</li>
-				<li class="ring">
+				<li class="sieraden goud">
 					<h3>Dio(r)evolution-ring</h3>
 					<p>€320,00</p>
 					<img src="images/diorevolution_ring.jpg"
 						alt="Metalen ring met goudkleur en witte kristallen en het Dior logo.">
 				</li>
-				<li>
+				<li class="schoenen beige"> 
 					<h3>Walk'n'Dior-sneaker</h3>
 					<p>€950,00</p>
 					<p>Nieuw</p>
 					<img src="images/walkndior_sneaker.jpg"
 						alt="Schoen van wit katoencanvas met goudkleurige Dior Oblique-print.">
 				</li>
-				<li>
+				<li class="sjalen goud">
 					<h3>Mitzah-sjaal met Dior Oblique-motief</h3>
 					<p>€210,00</p>
 					<p>Nieuw</p>
@@ -229,25 +218,25 @@
 					<img src="images/dior_model_tas.jpg"
 						alt="Model met de middelgrote Dior book tote bag in de hand in een bruine strand omgeving.">
 				</li>
-				<li>
+				<li class="tassen multicolor">
 					<h3>Middlegrote Dior Book Tote</h3>
 					<p>€3.000,00</p>
 					<p>Nieuw</p>
 					<img src="images/dior_book_tote.jpg"
 						alt="Tas met lattekleurig borduursel met goudkleurig Dior Around The World-motief">
 				</li>
-				<li>
+				<li class="brillen zwart">
 					<h3>DiorSignature R21</h3>
 					<p>€490,00</p>
 					<img src="images/diorsignature_r21_zonnebril.jpg" alt="Zwarte afgeronde zonnebril.">
 				</li>
-				<li>
+				<li class="sieraden goud">
 					<h3>Dio(r)evolution-ketting</h3>
 					<p>€520,00</p>
 					<img src="images/diorevolution_ketting.jpg"
 						alt="Ketting van verguld metaal en witte kristallen en het Dior logo.">
 				</li>
-				<li>
+				<li class="sjalen multicolor">
 					<h3>Vierkante sjaal met Dior Around the World-motief, (90 x 90 cm)</h3>
 					<p>€490,00</p>
 					<p>Nieuw</p>
