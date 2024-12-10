@@ -75,7 +75,7 @@
   --color-background: light-dark(#F8F8F8, #373c40);
   --background-color-menu: light-dark(#efefef,#161515);
   --wit: #ffffff;
-  --zwart: #040404;
+  --zwart:  #040404;
   --footer-p: #7c868d;
   --micro-interactie: #ed3937;
   --hover-link: light-dark(#000000, #8e8d8d);
@@ -340,6 +340,7 @@ nav ul li:nth-of-type(15){
 nav ul li label{
   font-weight:500;
 }
+
 
 
 

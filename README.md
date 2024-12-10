@@ -39,14 +39,13 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   https://www.dior.com/nl_nl?wiz_campaign=OD_OTH_NLD_AO_OTH_DIOR_OGOING_AW_TXT_GGL_CRD_DUT_EUR_EXTM_BRA&wiz_source=bing&wiz_medium=search_cpc&wiz_term=OneDior-Exact&wiz_content=dior&msclkid=e1ef4cfde629145c485a2bcf83f7abcd&utm_source=bing&utm_medium=cpc&utm_campaign=OD_OTH_NLD_AO_OTH_DIOR_OGOING_AW_TXT_GGL_CRD_DUT_EUR_EXTM_BRA&utm_term=dior&utm_content=OneDior-Exact
 
   #### Screenshot(s) van de eerste pagina (small screen): 
-  Home pagina Dior 
-  <img src="readme-images/home_dior.jpg" width="375px" alt="De home pagina van Dior">
-
-  #### Screenshot(s) van de tweede pagina (small screen):
-  Cadeaus voor de feestdagen pagina Dior  
+ Cadeaus voor de feestdagen pagina Dior  
   <img src="readme-images/cadeaus_dior1.jpg" width="375px" alt="De cadeaus voor de feestdagen pagina van Dior foto 1">
   <img src="readme-images/cadeaus_dior2.jpg" width="375px" alt="De cadeaus voor de feestdagen pagina van Dior foto 2">
- 
+
+  #### Screenshot(s) van de tweede pagina (small screen):
+  Product detail pagina  
+  <img src="readme-images/product_scherm.png" width="375px" alt="De product detail pagina van de Middelgrote Dior Toujours-tas">
 </details>
 
 
@@ -94,6 +93,9 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   ### wellicht nog een dynamisch deel (bijv filter): 
   <img src="readme-images/dior breakdown deel2.png" width="375px" alt="breakdown van nog een dynamisch deel">
+
+  ### De tweede product detail pagina
+  <img src="readme-images/dior breakdown_product.png" width="375px" alt="breakdown van de tweede pagina, de product detail pagina van de Middelgrote Dior Toujours-tas">
 
 </details>
 
@@ -143,6 +145,10 @@ Font toepassen met @fontface is nog niet gelukt
 
   ### Stand van zaken
   hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+  Ik liep deze week vooral vast met de header en de video en het hamburgermenu. Wat wel heel goed ging was aan de hand van grid de producten lijkst neerszetten en de lay-out aan te passen met @media (min-width: 1024px)
+  <img src="readme-images/producten_telefoon.png" width="375px" alt="Productenlijst op telefoon">
+  <img src="readme-images/producten_laptop.png" width="375px" alt="Productenlijst op laptop">
+
 
 
   ### Agenda voor meeting
@@ -190,6 +196,9 @@ De linkjes in de tekst onderaan de pagina staan raar.
 
   ### Stand van zaken
   hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+  Ik ben deze week begonnen aan mijn tweede pagina. Hier liep ik op tegen een aantal dingen zoals de carrousels en de java voor het muten van de video. Wat wel gelukt is, is om op de eerste pagina al mijn uitklap veldjes, zoals de filter, de sorteren en het hamburgermenu.
+  <img src="readme-images/hamburger_menu.png" width="375px" alt="Uitgeklapte hamburger menu">
+  <img src="readme-images/filter.png" width="375px" alt="Uitgeklapte filter">
 
 
   ### Agenda voor meeting
