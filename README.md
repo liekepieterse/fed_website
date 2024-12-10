@@ -179,6 +179,12 @@ De linkjes in de tekst onderaan de pagina staan raar.
 
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen (geef ook aan wat er verbeterd is):
+  Uit de checklist is gebleken dat ik bij de globale code overal yes heb, terwijl dit bij de Dior website niet het geval is. De Dior website heeft heel veel errors en warnings, en mijn code heeft 0 errors. 
+  Bij mobile and touch hebben mijn website en de Dior website even veel yes, maar ik heb een no bij remove horizontal scrolling en de dior website heeft bij ensure sufficient space between interactive items in order to provide a scroll area een no.
+  Bij heading heb ik bij alles yes, terwijl Dior een no heeft.
+  Bij images heb ik een stuk beter gepresteerd dan de Dior website. De Dior website heeft overal no, dit komt deels omdat er geen graphs zijn. Ik heb ook geen graphs en heb daarom daar ook no, verder heb ik ook no bij decorative items een 0 als alt text omdat ik geen decorative items heb. Op alle dingen die ik wel op mijn pagina's heb, heb ik wel yes.
+  Bij appearance heb ik ook beter gescoord omdat de text naar 200% kan gezet worden en dan nog steeds leesbaar is, terwijl dit bij de Dior website een no is. Verder heb ik ook een dark en light mode terwijl die ook niet in de Dior website zijn. 
+  Verder hebben mijn website en de Dior website op de meeste dingen hetzelfde gescoord.
 
 </details>
 
