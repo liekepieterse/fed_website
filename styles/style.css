@@ -74,7 +74,7 @@
   --color-text: light-dark(#373C40, #F8F8F8);
   --color-background: light-dark(#F8F8F8, #373c40);
   --background-color-menu: light-dark(#efefef,#161515);
-  --wit: #ffffff;
+  --wit: light-dark(#ffffff, #040404);
   --zwart:  #040404;
   --footer-p: #7c868d;
   --micro-interactie: #ed3937;
@@ -88,14 +88,9 @@
 
 /*darkmode*/
 @media (prefers-color-scheme:dark){
-  nav button.active span{
-    background-color: var(--wit);
-  }
-}
-
-@media (prefers-color-scheme:dark){
-  main section:nth-of-type(3) ul li img{
-    filter: brightness(80%);
+  footer img,
+  summary img{
+    filter: brightness(200%);
   }
 }
 
@@ -222,6 +217,7 @@ header{
 nav{
   z-index: 40;
 }
+
 nav ul {
   background-color: var(--background-color-menu);
   height: 100vh;
@@ -623,3 +619,4 @@ background-color: var(--color-background);
 animation-name: dior-animatie;
 animation-duration: 8s;
 } */
+

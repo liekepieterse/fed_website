@@ -88,11 +88,8 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### de hele pagina: 
   <img src="readme-images/dior breakdown full.png" width="375px" alt="breakdown van de hele pagina">
 
-  ### dynamisch deel (bijv menu): 
-  <img src="readme-images/dior breakdown deel.png" width="375px" alt="breakdown van een dynamisch deel">
-
-  ### wellicht nog een dynamisch deel (bijv filter): 
-  <img src="readme-images/dior breakdown deel2.png" width="375px" alt="breakdown van nog een dynamisch deel">
+  ### dynamisch deel (Filter): 
+  <img src="readme-images/breakdown_filter.png" width="375px" alt="breakdown van filter">
 
   ### De tweede product detail pagina
   <img src="readme-images/dior breakdown_product.png" width="375px" alt="breakdown van de tweede pagina, de product detail pagina van de Middelgrote Dior Toujours-tas">
@@ -120,9 +117,9 @@ Font toepassen met @fontface is nog niet gelukt
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  | student 1      
-  |Mag je gewoon zelf een font kiezen dat er op lijkt of moet je echt hetzelfde font gebruiken.
-  | student 2          | student 3    | student 4        |
+ student 1      
+Mag je gewoon zelf een font kiezen dat er op lijkt of moet je echt hetzelfde font gebruiken.
+
 
 
   ### Verslag van meeting
@@ -242,15 +239,24 @@ Verder heb ik ook geleerd hoe je ervoor kan zorgen dat als een venster is uitgek
 
 
   ### Dit ging goed/Heb ik geleerd: 
-  Korte omschrijving met plaatjes
+Ik ben vooral blij met mijn producten lijst. Ik heb hier voor het eerst gebruik gemaakt van grid en media query, en ik ben blij met hoe het is gelukt. Ook heb ik bij mijn producten lijst een werkende filter en een werkende sorteer volgens. Voor deze twee heb ik geleerd gebruik te maken van :has().
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="top">
+  <img src="readme-images/producten_telefoon.png" width="375px" alt="Productenlijst op telefoon">
+  <img src="readme-images/producten_laptop.png" width="375px" alt="Productenlijst op laptop">
+    <img src="readme-images/gefilterde_producten.png" width="375px" alt="Productenlijst gefilterd op tassen">
+  <img src="readme-images/product_filter.png" width="375px" alt="filteren op tassen">
+
+
+  Wat ik ook geleerd heb is om een aniatie te maken aan de hand van keyframes en verder te weken met :has(). Dit is te zien in mijn kert thema waar als je een checkbox in de header checked er kerstbal slingers aan de bovenkant van de pagina komen te hangen en er met een delay een kerstman met zijn slee en een rendier over het scherm van rechts naar links vliegt.
+  <img src="readme-images/kerst_thema.png" width="375px" alt="kerst thema">
 
 
   ### Dit was lastig/Is niet gelukt:
-  Korte omschrijving met plaatjes
+  Wat mij niet gelukt is, is de kleur van de spans in het menu aanpassen voor darkmode.
+  Ik heb andere dingen wel kunnen aanpassen, maar als ik dezelfde manier gebruikte voor de spans veranderde er nikst. Ik had het liefsts de spans wit willen maken, als menu en als kruisje.
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="bummer">
+  <img src="readme-images/menu_dark_mode.png" width="375px" alt="menu in darkmode">
+   <img src="readme-images/kruisje_dark_mode.png" width="375px" alt="kruisje van het menu in darkmode">
 </details>
 
 
@@ -266,8 +272,17 @@ Verder heb ik ook geleerd hoe je ervoor kan zorgen dat als een venster is uitgek
   Nb. ChatGpT en andere AI horen er ook bij.
   Nb. Vermeld de bronnen ook in je code.
 
-  1. bron 1
-  2. bron 2
-  3. ...
+  1. Bron: chat gpt - prompt:ik heb in een button twee woorden staan, 
+kan ik een van die woorden aan de linker kant plaatsen en de ander aan de rechtekant.  
+<button>Bestellen €3.500,00</button>
+Deze bron heb ik gebruikt om op mijn tweede pagina de tekst in een button vorm te geven zodat een deel van de tekst aan de linkerkant staat en het andere deel aan de rechtekant.
 
+  2. bron: https://www.a11yproject.com/posts/how-to-hide-content/
+  Deze bron heb ik gebruikt voor de class visually hidden om tekst te verbergen, maar het wel toegankelijk te houden.
+
+  3. Hamburger menu bron: https://youtu.be/aNDqzlAKmZc?si=_QBkHuhMWLj0btXJ
+  Deze bron heb ik gebruikt om mijn hamburger menu te maken.
+
+  4. play pause button pagina 1 bron: chatgpt
+  Deze bron heb ik gebruikt om de play en pauze buttons voor mijn video's te laten werken en elkaar af te laten wisslen.
 </details>

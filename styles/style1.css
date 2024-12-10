@@ -29,6 +29,9 @@ nav button span {
 
 
 
+
+
+
 /*tekst onder productenlijst*/
 section:nth-of-type(4) p {
   max-width: 40em;
@@ -503,6 +506,13 @@ section:nth-of-type(3) ul {
   }
 }
 
+@media (prefers-color-scheme:dark){
+  video,
+  main section:nth-of-type(3) img{
+    filter: brightness(80%);
+  }
+}
+
 section:nth-of-type(3) ul img {
   max-width: 100%;
   height: auto;
@@ -568,7 +578,7 @@ section:nth-of-type(3) ul li p:nth-of-type(2) {
 
 
 section:nth-of-type(3) ul li img:hover{
-  transform: scale(1.1) ;
+  transform: scale(1.03) ;
 }
 
 section:nth-of-type(3) ul li:nth-of-type(1) img:hover,
