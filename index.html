@@ -16,8 +16,7 @@
 <body>
 	<header>
 		<nav>
-			<button>
-				<p class="visually-hidden">menu</p>
+			<button aria-label="hamburger menu">
 				<span></span>
 				<span></span>
 			</button>
@@ -94,6 +93,7 @@
 			<img src="images/account_icon_white.png" alt="account icoon">
 			<img src="images/shop_icon_white.png" alt="winkeltas icoon">
 		</nav>
+		<img src="images/kerstman.png" alt="een kerstman in zijn slee getrokken door een rendier">
 		<img src="images/kerst_ballen.png" alt="een slinger met rode en groene kersballen">
 	</header>
 	<main>
@@ -104,7 +104,7 @@
 
 
 			<video muted loop>
-				<source src="images/dior_video.mp4" type="video/mp4" />
+				<source src="images/dior_video.mp4" type="video/mp4" >
 				Uw browser ondersteunt de video niet.
 			</video>
 			<img src="images/pauze_knop.png" alt="pauze knop">
@@ -124,22 +124,22 @@
 					<details>
 						<summary>Categorie<img src="images/menuopen.svg" alt="icoon voor een grijs pijltje"></summary>
 						<label>
-							<input type="radio" value="tassen" name="categorie">tassen
+							<input type="radio" value="tassen" name="categorie">Tassen
 						</label>
 						<label>
-							<input type="radio" value="sieraden" name="categorie">sieraden
+							<input type="radio" value="sieraden" name="categorie">Sieraden
 						</label>
 						<label>
-							<input type="radio" value="schoenen" name="categorie">schoenen
+							<input type="radio" value="schoenen" name="categorie">Schoenen
 						</label>
 						<label>
-							<input type="radio" value="sjalen" name="categorie">sjalen
+							<input type="radio" value="sjalen" name="categorie">Sjalen
 						</label>
 						<label>
-							<input type="radio" value="brillen" name="categorie">brillen
+							<input type="radio" value="brillen" name="categorie">Brillen
 						</label>
 						<label>
-							<input type="radio" value="alles" name="categorie">alles
+							<input type="radio" value="alles" name="categorie">Alles
 						</label>
 					</details>
 				</li>
@@ -147,19 +147,19 @@
 					<details>
 						<summary>Kleur<img src="images/menuopen.svg" alt="icoon voor een grijs pijltje"></summary>
 						<label>
-							<input type="radio" value="zwart" name="kleur">zwart
+							<input type="radio" value="zwart" name="kleur">Zwart
 						</label>
 						<label>
-							<input type="radio" value="goud" name="kleur">goud
+							<input type="radio" value="goud" name="kleur">Goud
 						</label>
 						<label>
-							<input type="radio" value="beige" name="kleur">beige
+							<input type="radio" value="beige" name="kleur">Beige
 						</label>
 						<label>
-							<input type="radio" value="multicolor" name="kleur">multicolor
+							<input type="radio" value="multicolor" name="kleur">Multicolor
 						</label>
 						<label>
-							<input type="radio" value="alles" name="kleur">alles
+							<input type="radio" value="alles" name="kleur">Alles
 						</label>
 					</details>
 				</li>
@@ -173,11 +173,17 @@
 					<h4>Sorteer volgens</h4>
 					<img src="images/kruisje.svg" alt="kruisje">
 				</li>
-				<li>Aanbevolen</li>
-				<li>Toenemende Prijs</li>
-				<li>Dalende prijs</li>
+				<li><label>
+					<input type="radio" value="aanbevolen" name="sorteren">Aanbevolen
+				</label></li>
+				<li><label>
+					<input type="radio" value="toenemend" name="sorteren">Toenemende prijs
+				</label></li>
+				<li><label>
+					<input type="radio" value="dalend" name="sorteren">Dalende prijs
+				</label></li>
 				<li>
-					<button>Zie de 337 product(en)</button>
+					<button>Zie de 8 product(en)</button>
 				</li>
 			</ul>
 		</section>

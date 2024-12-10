@@ -61,8 +61,8 @@ initializeButtonState();
 
 
 //video geluid
-const geluidKnop = document.querySelector('main section:nth-of-type(4) img:nth-of-type(3)')
-const muteKnop = document.querySelector('main section:nth-of-type(4) img:nth-of-type(4)')
+const geluidKnop = document.querySelector('main section:nth-of-type(4) img:nth-of-type(3)');
+const muteKnop = document.querySelector('main section:nth-of-type(4) img:nth-of-type(4)');
 
 geluidKnop.onclick = geluidAan
 function geluidAan(){
@@ -73,5 +73,31 @@ muteKnop.onclick = geluidUit
 function geluidUit(){
   video.muted = true
 }
+
+
+
+
+// hartje
+const roodHartje = document.querySelector('main section:nth-of-type(1)>img:nth-of-type(2)');
+const leegHartje = document.querySelector('main section:nth-of-type(1)>img:nth-of-type(1)');
+const likePopUp = document.querySelector('nav > p');
+
+leegHartje.addEventListener("click", () => {
+  roodHartje.classList.toggle("active");
+  leegHartje.classList.toggle("active");
+  likePopUp.classList.toggle("active");
+}) 
+
+
+
+
+roodHartje.addEventListener("click", () => {
+  roodHartje.classList.remove("active");
+  leegHartje.classList.remove("active");
+  likePopUp.classList.remove("active");
+})
+
+
+
 
 

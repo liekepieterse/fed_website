@@ -68,12 +68,92 @@ main section:nth-of-type(1) p:nth-of-type(2) {
 
 
 /* hartje */
-main section:nth-of-type(1)>img:nth-of-type(1) {
+main section:nth-of-type(1)>img:nth-of-type(1),
+main section:nth-of-type(1)>img:nth-of-type(2) {
     max-width: 1em;
     position: absolute;
     bottom: 5em;
     right: 2em;
+    cursor: pointer;
 }
+
+
+main section:nth-of-type(1)>img:nth-of-type(2){
+    display:none;
+}
+
+
+main section:nth-of-type(1)>img:nth-of-type(2).active{
+    display:block;
+    animation-name: hartje-animatie;
+    animation-duration: 1s;
+}
+
+main section:nth-of-type(1)>img:nth-of-type(1).active{
+    display:none;
+}
+
+
+@keyframes hartje-animatie{
+0%{
+    scale: 1;
+}
+50%{
+    scale:1.5;
+}
+100%{
+    scale:1;
+}
+}
+
+
+nav > p{
+    background-color: var(--micro-interactie);
+    color: var(--wit);
+    position:absolute;
+    font-size: 0.6em;
+    right: 12em;
+    top:2em;
+    padding:.3em;
+    padding-bottom: 1.5em;
+    padding-left: 0.5em;
+    border-radius: 10em;
+    height: 1.2em;
+    width: 1.8em;
+    display:none;
+}
+
+
+nav > p.active{
+    animation-name: like-pop-up-animatie;
+    animation-duration: 1s;
+    display:block;
+}
+
+@keyframes like-pop-up-animatie{
+    0%{
+        scale: 0;
+    }
+    40%{
+        scale:1.2;
+    }
+    100%{
+        scale:1;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -88,6 +168,9 @@ main section:nth-of-type(2) img {
     max-width: 6em;
 }
 
+main section:nth-of-type(2) img:hover{
+    transform: scale(1.1);
+}
 
 
 
@@ -114,7 +197,7 @@ main section:nth-of-type(2) button:nth-of-type(1) {
 
 
 /* Bron: chat gpt - prompt:ik heb in een button twee woorden staan, 
-kan ik een van dei woorden aan de linekr kant plaatsen en de ander aan de rechtekant.  
+kan ik een van die woorden aan de linker kant plaatsen en de ander aan de rechtekant.  
 <button>Bestellen €3.500,00</button> */
 main section:nth-of-type(2) button:nth-of-type(1)::after {
     content: "€3.500,00";

@@ -97,7 +97,6 @@ main p:nth-of-type(1){
 
 main p:nth-of-type(2){
   position: absolute;
-  bottom:1em;
   left: 1.5em;
 }
 
@@ -110,6 +109,9 @@ main section:nth-of-type(1) img{
   max-width: 3em;
 }
 
+main h1{
+  text-align: center;
+}
 
 
 
@@ -361,6 +363,118 @@ main section:nth-of-type(2) ul:nth-of-type(2).active {
 
 
 
+section:nth-of-type(3) ul li:nth-of-type(1),
+section:nth-of-type(3) ul li:nth-of-type(6),
+section:nth-of-type(3) ul li:nth-of-type(11) {
+  grid-column-start: 1;
+  grid-column-end: -1;
+}
+
+@media (min-width: 1024px) {
+
+  section:nth-of-type(3) ul li:nth-of-type(1),
+  section:nth-of-type(3) ul li:nth-of-type(6),
+  section:nth-of-type(3) ul li:nth-of-type(11) {
+    grid-column: auto;
+  }
+}
+
+
+
+/* sorteeren */
+html:has([value="toenemend"]:checked) section:nth-of-type(3) ul li:nth-of-type(2){
+  grid-column-start: 2;
+  grid-row-start: 6;
+}
+
+html:has([value="toenemend"]:checked) section:nth-of-type(3) ul li:nth-of-type(3){
+  grid-column-start: 2;
+  grid-row-start: 2;
+}
+
+html:has([value="toenemend"]:checked) section:nth-of-type(3) ul li:nth-of-type(4){
+  grid-column-start: 2;
+  grid-row-start: 5;
+}
+
+html:has([value="toenemend"]:checked) section:nth-of-type(3) ul li:nth-of-type(5){
+  grid-column-start: 1;
+  grid-row-start: 2;
+}
+
+html:has([value="toenemend"]:checked) section:nth-of-type(3) ul li:nth-of-type(7){
+  grid-column-start: 1;
+  grid-row-start: 6;
+}
+
+html:has([value="toenemend"]:checked) section:nth-of-type(3) ul li:nth-of-type(8){
+  grid-column-start: 1;
+  grid-row-start: 3;
+}
+
+html:has([value="toenemend"]:checked) section:nth-of-type(3) ul li:nth-of-type(9){
+  grid-column-start: 1;
+  grid-row-start: 5;
+}
+
+html:has([value="toenemend"]:checked) section:nth-of-type(3) ul li:nth-of-type(10){
+  grid-column-start: 2;
+  grid-row-start: 3;
+}
+
+
+
+
+html:has([value="dalend"]:checked) section:nth-of-type(3) ul li:nth-of-type(2){
+  grid-column-start: 1;
+  grid-row-start: 2;
+}
+
+html:has([value="dalend"]:checked) section:nth-of-type(3) ul li:nth-of-type(3){
+  grid-column-start: 1;
+  grid-row-start: 6;
+}
+
+html:has([value="dalend"]:checked) section:nth-of-type(3) ul li:nth-of-type(4){
+  grid-column-start: 1;
+  grid-row-start: 3;
+}
+
+html:has([value="dalend"]:checked) section:nth-of-type(3) ul li:nth-of-type(5){
+  grid-column-start: 2;
+  grid-row-start: 6;
+}
+
+html:has([value="dalend"]:checked) section:nth-of-type(3) ul li:nth-of-type(7){
+  grid-column-start: 2;
+  grid-row-start: 2;
+}
+
+html:has([value="dalend"]:checked) section:nth-of-type(3) ul li:nth-of-type(8){
+  grid-column-start: 1;
+  grid-row-start: 5;
+}
+
+html:has([value="dalend"]:checked) section:nth-of-type(3) ul li:nth-of-type(9){
+  grid-column-start: 2;
+  grid-row-start: 3;
+}
+
+html:has([value="dalend"]:checked) section:nth-of-type(3) ul li:nth-of-type(10){
+  grid-column-start: 2;
+  grid-row-start: 5;
+}
+
+
+
+
+
+
+
+
+
+
+
 /*filter en sorteer knop*/
 
 main section:nth-of-type(2){
@@ -453,17 +567,17 @@ section:nth-of-type(3) ul li p:nth-of-type(2) {
 }
 
 
+section:nth-of-type(3) ul li img:hover{
+  transform: scale(1.1) ;
+}
+
+section:nth-of-type(3) ul li:nth-of-type(1) img:hover,
+section:nth-of-type(3) ul li:nth-of-type(6) img:hover,
+section:nth-of-type(3) ul li:nth-of-type(11) img:hover {
+  transform: scale(1);
+}
 
 
-
-
-
-
-
-
-/* 
-Image veranderen op hover met opacity van 0 naar 1 van ander image.
-*/
 
 
 
@@ -474,5 +588,4 @@ Image veranderen op hover met opacity van 0 naar 1 van ander image.
 
 /* 
 Hamburger mag geen p in de button maar moet wel tekst hebben.
-Het hamburgermenu gaat achter de andere dingen op de pagina als ik probeer te scrollen.
   */
