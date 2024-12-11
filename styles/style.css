@@ -80,6 +80,7 @@
   --micro-interactie: #ed3937;
   --hover-link: light-dark(#000000, #8e8d8d);
   --hover-button-betalen: light-dark(#8e8d8d, #000000);
+  --wit-wit: #ffffff;
 }
 
 /****************/
@@ -539,7 +540,7 @@ details summary img {
   cursor: pointer;
 }
 
-details[open] summary img {
+details[open] > summary img {
   rotate: 180deg;
   transition: 1s ease;
 }
