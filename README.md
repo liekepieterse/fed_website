@@ -241,7 +241,8 @@ Verder heb ik ook geleerd hoe je ervoor kan zorgen dat als een venster is uitgek
   <summary>uitwerken voor eindgesprek</summary>
 
   ### Je uitkomst - karakteristiek screenshots:
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="uitomst opdracht 1">
+  <img src="readme-images/volledige_eerste_pagina.png" width="375px" alt="uitomst pagina 1">
+  <img src="readme-images/volledige_tweede_pagina.png" width="375px" alt="uitomst pagina 2">
 
 
   ### Dit ging goed/Heb ik geleerd: 
