@@ -25,7 +25,7 @@
 /* Light (300) */
 @font-face {
   font-family: 'Hellix';
-  src: url('../fonts/hellix-light.woff2') format('woff2');
+  src: url('../fonts/Hellix-Light.woff2') format('woff2');
   font-weight: 300;
   font-style: normal;
 }
@@ -33,7 +33,7 @@
 /* Regular (400) */
 @font-face {
   font-family: 'Hellix';
-  src: url('../fonts/hellix-regular.woff2') format('woff2');
+  src: url('../fonts/Hellix-Regular.woff2') format('woff2');
   font-weight: 400;
   font-style: normal;
 }
@@ -41,7 +41,7 @@
 /* Medium (500) */
 @font-face {
   font-family: 'Hellix';
-  src: url('../fonts/hellix-medium.woff2') format('woff2');
+  src: url('../fonts/Hellix-Medium.woff2') format('woff2');
   font-weight: 500;
   font-style: normal;
 }
@@ -49,7 +49,7 @@
 /* Semi-Bold (600) */
 @font-face {
   font-family: 'Hellix';
-  src: url('../fonts/hellix-semibold.woff2') format('woff2');
+  src: url('../fonts/Hellix-SemiBold.woff2') format('woff2');
   font-weight: 600;
   font-style: normal;
 }
@@ -57,7 +57,7 @@
 /* Bold (700) */
 @font-face {
   font-family: 'Hellix';
-  src: url('../fonts/hellix-bold.woff2') format('woff2');
+  src: url('../fonts/Hellix-Bold.woff2') format('woff2');
   font-weight: 700;
   font-style: normal;
 }
@@ -152,7 +152,6 @@ h3,
 p,
 li,
 a,
-button,
 footer details,
 form,
 footer li:nth-of-type(1) h3,
@@ -233,7 +232,7 @@ nav ul {
 }
 
 
-nav button {
+nav button:nth-of-type(1) {
   height: 2em;
   width: 2em;
   position: relative;
@@ -355,24 +354,29 @@ nav {
   padding: 1em;
 }
 
-nav img {
-  height: 1em;
+header nav button{
+  background: none;
+  border: none;
 }
 
-nav img:nth-of-type(1) {
+nav button img{
+  height:1.5em;
+}
+
+nav > img:nth-of-type(1) {
   height: 2em;
   margin: auto;
 }
 
-nav img:nth-of-type(2) {
+nav button:nth-of-type(2) {
   order: -1;
   justify-content: start;
   margin: 1em;
 }
 
-nav img:nth-of-type(3),
-nav img:nth-of-type(4),
-nav img:nth-of-type(5) {
+nav button:nth-of-type(3),
+nav button:nth-of-type(4),
+nav button:nth-of-type(5) {
   display: flex;
   align-items: center;
   margin: 1em;

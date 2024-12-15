@@ -67,29 +67,39 @@ main section:nth-of-type(1) p:nth-of-type(2) {
 }
 
 
+
+
+
 /* hartje */
-main section:nth-of-type(1)>img:nth-of-type(1),
-main section:nth-of-type(1)>img:nth-of-type(2) {
-    max-width: 1em;
+main section:nth-of-type(1)> button:nth-of-type(1),
+main section:nth-of-type(1)>button:nth-of-type(2) {
+    max-width: fit-content;
     position: absolute;
     bottom: 5em;
     right: 2em;
     cursor: pointer;
+    background: none;
+    border:none;
+}
+
+main section:nth-of-type(1)> button:nth-of-type(1) img,
+main section:nth-of-type(1)>button:nth-of-type(2) img{
+    max-width: 1.5em;
 }
 
 
-main section:nth-of-type(1)>img:nth-of-type(2){
+main section:nth-of-type(1)>button:nth-of-type(2){
     display:none;
 }
 
 
-main section:nth-of-type(1)>img:nth-of-type(2).active{
+main section:nth-of-type(1)>button:nth-of-type(2).active{
     display:block;
     animation-name: hartje-animatie;
     animation-duration: 1s;
 }
 
-main section:nth-of-type(1)>img:nth-of-type(1).active{
+main section:nth-of-type(1)>button:nth-of-type(1).active{
     display:none;
 }
 
@@ -341,27 +351,38 @@ main section:nth-of-type(4) video {
     z-index: -10;
 }
 
-main section:nth-of-type(4) img:nth-of-type(1),
-main section:nth-of-type(4) img:nth-of-type(2) {
+main section:nth-of-type(4) button:nth-of-type(1) img,
+main section:nth-of-type(4) button:nth-of-type(2) img,
+main section:nth-of-type(4) button:nth-of-type(3) img,
+main section:nth-of-type(4) button:nth-of-type(4) img{
+max-width: 3em;
+}
+
+main section:nth-of-type(4) button{
+    background: none;
+    border:none;
+}
+
+main section:nth-of-type(4) button:nth-of-type(1),
+main section:nth-of-type(4) button:nth-of-type(2) {
     display: none;
     cursor: pointer;
     position: absolute;
     left: 1em;
     bottom: 1em;
-    max-width: 3em;
 }
 
-main section:nth-of-type(4) img:nth-of-type(3),
-main section:nth-of-type(4) img:nth-of-type(4) {
+main section:nth-of-type(4) button:nth-of-type(3),
+main section:nth-of-type(4) button:nth-of-type(4) {
     cursor: pointer;
     position: absolute;
     left: 5em;
     bottom: 1em;
-    max-width: 3em;
 }
 
 
-main section:nth-of-type(4) img:nth-of-type(4) {
+
+main section:nth-of-type(4) button:nth-of-type(4) {
     left: 9em;
 }
 
